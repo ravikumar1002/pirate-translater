@@ -1,0 +1,126 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Roboto", sans-serif;
+}
+
+a {
+  text-decoration: none;
+}
+
+:root {
+  --bg--primary--color: rgba(56, 56, 56, 0.856);
+  --text--primary--color: white;
+  --text-secondary-color: black;
+}
+
+body {
+  background-image: url("pirate-wallpaper-min.jpg");
+  background-size: cover;
+  position: relative;
+  background-repeat: no-repeat;
+  height: 100vh;
+}
+
+body::after {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  content: "";
+  background: #17161699;
+  z-index: -1;
+  backdrop-filter: blur(2px);
+}
+
+.heading {
+  text-align: center;
+  background-color: var(--bg--primary--color);
+  color: var(--text--primary--color);
+  padding: 1rem;
+}
+
+main {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  height: 527px;
+}
+
+.input-translate-section,
+.output-translate-section {
+  text-align: center;
+  font-size: 1.5rem;
+  color: rgb(59, 59, 59);
+}
+
+.discription {
+  color: var(--text--primary--color);
+  font-weight: 600;
+  padding: 1.5rem;
+}
+
+#input-text {
+  display: block;
+  margin: 0 auto;
+  background: #eeeeee;
+  border-radius: 9px;
+  font-size: 1.1rem;
+  max-width: 500px;
+  font-weight: 400;
+  padding: 1rem;
+  resize: none;
+  box-shadow: 4px 4px 0px #c2bab7;
+}
+
+#output-text {
+  border: 1px solid rgba(131, 131, 131, 0.527);
+  background: #eeeeee;
+  border-radius: 9px;
+  font-size: 1.1rem;
+  max-width: 500px;
+  font-weight: 400;
+  padding: 1rem;
+  color: var(--text-secondary-color);
+  resize: none;
+  box-shadow: -4px -4px 0px #c2bab7;
+}
+
+#translate-btn {
+  padding: 0.7rem;
+  font-size: 1.1rem;
+  font-weight: 500;
+  border-radius: 10px;
+  background: linear-gradient(45deg, #f7eee9, #d0c8c4);
+}
+
+.error-msg{
+	color: var(--text--primary--color);
+    font-weight: 600;
+	font-size: 1.5rem;
+	max-width: 13vw;
+	margin-top: 1.3rem; 
+}
+
+.social-touch {
+  position: absolute;
+  bottom: 0;
+}
+
+.icon-style {
+  font-size: 35px;
+  color: var(--text--primary--color);
+}
+
+footer {
+  display: flex;
+  gap: 3rem;
+  justify-content: center;
+  width: 97.8vw;
+  padding: 1rem;
+  margin-top: 2rem;
+  background-color: var(--bg--primary--color);
+}
