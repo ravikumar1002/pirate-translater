@@ -22,10 +22,11 @@ body {
   position: relative;
   background-repeat: no-repeat;
   height: 100vh;
+  background-attachment: fixed;
 }
 
 body::after {
-  position: absolute;
+  position: fixed;
   top: 0;
   left: 0;
   width: 100%;
@@ -106,8 +107,9 @@ main {
 }
 
 .social-touch {
-  position: absolute;
+  position: sticky;
   bottom: 0;
+  margin-top: 4.4rem;
 }
 
 .icon-style {
@@ -119,8 +121,46 @@ footer {
   display: flex;
   gap: 3rem;
   justify-content: center;
-  width: 97.8vw;
+  width: auto;
   padding: 1rem;
   margin-top: 2rem;
   background-color: var(--bg--primary--color);
 }
+
+
+@media only screen and (max-width: 1300px) {
+  main{
+   height: auto;
+   flex-direction: column;
+  }
+  .social-touch{
+    margin-top: 2.6rem;
+  }
+  .error-msg{
+    max-width: 100%;
+    text-align: center;
+    padding: 0.5rem;
+    border-radius: 10px;
+    color: red;
+    background: aliceblue;
+    margin: 0.5rem;
+  }
+    .btn-message{
+      display: contents;
+    }
+    #translate-btn{
+      margin: 1rem;
+    }
+   
+    .social-touch{
+     margin-top: 7.2rem; 
+    }
+   
+ }
+ 
+ @media only screen and (max-width: 575px) {
+     textarea{
+        width:75%;
+      }
+     
+ }

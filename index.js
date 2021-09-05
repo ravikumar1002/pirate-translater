@@ -18,6 +18,7 @@ function textdisplaying(){
         var translateText = json.contents.translated;
         outputText.innerText = translateText;
         console.log(translateText)
+        outputText.scrollIntoView()
     }
         )
 
