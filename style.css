@@ -100,10 +100,11 @@ main {
 
 .error-msg{
 	color: var(--text--primary--color);
-    font-weight: 600;
+  font-weight: 600;
 	font-size: 1.5rem;
 	max-width: 13vw;
 	margin-top: 1.3rem; 
+  display: none;
 }
 
 .social-touch {
@@ -144,7 +145,6 @@ footer {
     color: red;
     background: aliceblue;
     margin: 0.5rem;
-    display: none;
   }
     .btn-message{
       display: contents;
