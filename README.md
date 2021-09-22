@@ -1,6 +1,6 @@
 # Pirate Translator
 
-    This is a Pirate translation app based on Fun Translation API . Server URL used for getting translations is:
+   This is a Pirate translation app based on Fun Translation API . Server URL used for getting translations is:
 
 # How to use
 
