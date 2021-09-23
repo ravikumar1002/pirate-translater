@@ -96,6 +96,7 @@ main {
   font-weight: 500;
   border-radius: 10px;
   background: linear-gradient(45deg, #f7eee9, #d0c8c4);
+  cursor: pointer;
 }
 
 .error-msg{
@@ -111,6 +112,7 @@ main {
   position: sticky;
   bottom: 0;
   margin-top: 4.4rem;
+  top: 100%;
 }
 
 .icon-style {

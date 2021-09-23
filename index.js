@@ -28,6 +28,7 @@ translateBtn.addEventListener("click",function(){
     if( inputText.value === "" ){
         outputText.innerText = ""
         errorMsg.style.display = "block"
+        outputText.style.border = "none"
       errorMsg.innerText ="please type text what you want to translate"     
     }else{
         errorMsg.style.display = "none"
